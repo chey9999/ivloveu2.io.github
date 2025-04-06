@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html; charset=UTF-8">>
+    <title>Happy Birthday!</title>
+    <style>
+       body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-image: url('https://www.w3schools.com/w3images/lights.jpg'); /* Optional: cute background image */
+      background-size: cover;
+      background-position: center;
+    }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff3399;
+            font-size: 50px;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff3399, 0 0 20px #ff66b2;
+            }
+            to {
+                text-shadow: 0 0 20px #ff3399, 0 0 30px #ff66b2;
+            }
+        }
+        .balloons {
+            font-size: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #ff66b2;
+        }
+        .heart {
+      position: absolute;
+      animation: float 5s ease-in-out infinite;
+      font-size: 50px;
+      .love-message {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .radio-box {
+      font-size: 1.2rem;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>b sl o kbal khoch❤️🫀</h1>
+        <div class="balloons">❤️😭🫀</div>
+        <button onclick="playMusic()">Play my love Song 🎶</button>
+        <audio id="birthdaySong" src="./20250406_181256.mp3" preload="auto"></audio>
+        
+    </div>    <div class="love-message">b sl o na kbal khoch o ban tver oy b dg tha jivit muy nis pit chea sart klang nas . b jg merl thae kbal khoch os muy jivit nis na b ng nv jit o rhot tv na o sml.</div>
+
+  
+
+  </div>
+    <div class="heart" style="top: 10%; left: 20%;">❤️</div>
+    <div class="heart" style="top: 30%; left: 40%;">💖</div>
+    <div class="heart" style="top: 50%; left: 60%;">💕</div>
+    <div class="heart" style="top: 70%; left: 80%;">💞</div>
+    <script>
+        function playMusic() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
